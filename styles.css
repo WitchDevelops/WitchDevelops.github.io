@@ -1,0 +1,123 @@
+* {
+    font-family: Century gothic;
+    padding: unset;
+}
+
+body {
+    background-image: url(https://parispeaceforum.org/wp-content/uploads/2021/10/NET-ZERO-SPACE-INITIATIVE-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #survey-form, header {
+    text-align: center;
+    color: #F2EAE4;
+    background: #052439;
+    opacity: 85%;
+    width: 70vw;
+    margin: 2rem auto 0 auto;
+    padding: 5%;
+    max-width: 500px;
+  }
+  
+  
+  h1, a {
+    color: #92A5B8;
+  }
+
+  figure {
+    margin: 2rem auto 0 auto;
+    height: auto;
+  }
+  
+  img {
+    max-width: 200px;
+    min-width: 100px;
+    height: auto;
+  }
+  
+  legend {
+    font-size: 1.2rem;
+    color:  #E0B99E;
+    text-align: left;
+  }
+
+  label {
+    
+    width: 100%;
+    height: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.1rem;
+  }
+
+  input {
+    
+    width: 100%;
+    height: 2rem;
+    margin: 5px 5px 5px 5px;
+  }
+
+  
+
+  .field {
+    padding: 1.5rem;
+    text-align: left;
+    display: block;
+    border: 1px solid #E0B99E;
+    margin: 1rem; 
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+
+
+  
+  select {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 1rem;
+    font-family: Century gothic;
+  }
+
+
+  
+  [type="checkbox"], [type="radio"] {
+    width: unset;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  input[type=submit] {
+    display: block;
+    border: solid 3px #052439;
+    color: #052439;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #E0B99E;
+    padding: unset;
+    border-radius: 10px;
+    margin-top: 2rem;
+    width: 120px;
+    height: 4rem;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  input[type=submit]:hover {
+    cursor: pointer;
+    color: #E0B99E;
+    background: #052439;
+    border: solid 3px #E0B99E;
+    transition: 0.5s;
+  }
+
+  input[type=submit]:focus {
+    border: solid 3px #92A5B8;
+    box-shadow: 0px 0px 20px 0px #92A5B8;
+  }
+
+  input[type=submit]:active {
+    color: #e2dedb;
+    background: #02080c;
+    border: solid 3px #92A5B8;
+}

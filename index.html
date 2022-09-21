@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey form</title>
+</head>
+
+<body>
+    <div type="container">
+
+        <!--Header section starts here, it has a title and a descriptio separated by a horizontal line for visual reasons-->
+        <header>
+            <h1 id="title">Human research form</h1>
+        <hr>
+            <p id="description">This form is about humans. All the provided information will be used to learn more about this species. If you are a fellow curious creature, contact me at <a href="mail.to">IStudyHumans@alienscience.org</a></p>
+
+            <!-- picture of alien with a caption -->
+            <figure>
+                <img 
+                alt="friendly-looking alien with 3 eyes slight smile and two horns" 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6zYxCp57r2-8hyFIhwSLw8DXLnvdNtFhiHn978Jc6GZMqS0xaDX3dNQkmHn7UACAAMok&usqp=CAU"/>
+            <p>This is me. Hello! I am Gmork and I study humans. You're helping me learn by filling this form.</p>
+            </figure> 
+        </header>
+
+        <!--Form starts here-->
+        <form id="survey-form">
+
+            <!-- Part 1: Contact details-->
+            <fieldset class="field"> 
+                <legend>Personal details</legend>
+
+                <label id="name-label">Which sound do people make to catch your attention?</label>
+                <input id="name" type="text" placeholder="Name" required>
+         
+                <label id="email-label">Where should we direct virtual correspondence?</label>
+                <input id="email" type="email" placeholder="generic_human@humanpost.earth" required>
+
+                <label id="number-label">How many Earth revolutions have you witnessed? </label>
+                <input id="number" type="number" min=0 max=150 placeholder="Age">
+            
+            </fieldset>
+
+            <!-- Part 2: Things you like-->
+            <fieldset class="field">
+                <legend>Things you like</legend>
+
+                <!--Planet dropdown menu-->
+                <label id="planet">Which planet of your planetary system do you like the most?</label>
+                <select id="dropdown">
+                    <option>Select one</option>
+                    <option>Mercury</option>
+                    <option>Venus</option>
+                    <option>Earth</option>
+                    <option>Mars</option>
+                    <option>Jupiter</option>
+                    <option>Saturn</option>
+                    <option>Uranus</option>
+                    <option>Neptune</option>
+                    <option>Pluto (is a planet!)</option>
+                </select>
+            
+                <!--Creatures checkbox-->
+                <label id="creatures">What type of Earthly creatures do you like the most?</label>
+                <input type="checkbox" value="furry">Furry
+                <input type="checkbox" value="featherd">Featered
+                <input type="checkbox" value="scaled">Scaled
+                <input type="checkbox" value="soft-bodied">Soft-bodied
+                <input type="checkbox" value="slimy">Small and slimy
+                <input type="checkbox" value="flying">Flying
+                <input type="checkbox" value="horned">Horned
+                <input type="checkbox" value="multi-legged">Multi-legged
+          
+                <!--Number of legs grouped radiobutton, select onlyu one-->
+                <label id="legs">What is the optimal number of appendices a creature should have?</label>
+                <input type="radio" name="legs" value="0">0
+                <input type="radio" name="legs" value="2">2
+                <input type="radio" name="legs" value="4">4
+                <input type="radio" name="legs" value="6">6
+                <input type="radio" name="legs" value="8">8
+                <input type="radio" name="legs" value="more">more
+            </fieldset>
+        
+        <!--Textbox area-->
+        <fieldset class="field">
+          <legend>Your thoughts</legend>
+          <textarea placeholder="Please communicate your thoughts with me"></textarea>
+        </fieldset>
+
+        <!--submit section-->
+        <input type="checkbox" value=" " id="consent" class="check" required>I confirm the above information is truthful and given willingly.
+        <input type="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
