@@ -52,9 +52,9 @@ p {
     top: 150%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 8.7vw;
+    font-size: max(8.7vw; 30px);
     border: 2px solid white;
-    padding: 5vw;
+    padding: inherit;
   }
 
  #tribute-info {
