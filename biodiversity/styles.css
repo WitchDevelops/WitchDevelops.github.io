@@ -24,7 +24,7 @@ p {
     }
 /* layout */
 #first-div {
-    background-image: url(assets/background.jpg);
+    background-image: url(background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
