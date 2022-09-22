@@ -1,0 +1,68 @@
+/* main */
+* {
+    font-family: Century gothic;
+    text-align: center;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+/* typography */
+h1 {
+    color: white;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14vw;
+    text-shadow: 2px 2px black;
+    }
+
+p {
+    color: black;
+    }
+/* layout */
+#first-div {
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+  }
+
+#second-div {
+    background-color: black;
+    min-height: 100vh;
+  }
+
+#image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    min-width: 50%;
+    height: auto;
+  }
+
+ #important {
+    color: white;
+    margin: auto;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8.7vw;
+    border: 2px solid white;
+    padding: 5vw;
+  }
+
+ #tribute-info {
+    background-color: rgb(67, 98, 67);
+  }
+
+footer {
+    background-color: rgb(86, 244, 86);
+    color: black;
+    text-align: left;
+  }
