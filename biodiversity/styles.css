@@ -1,30 +1,66 @@
-/* main */
 * {
-    font-family: Century gothic;
-    text-align: center;
-    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: 'Montserrat';
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
     }
-/* typography */
+
 h1 {
-    color: white;
-    margin: auto;
+  font-family: 'PT Serif Caption';
+  color: #E0E5E4;
+     margin: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 14vw;
-    text-shadow: 2px 2px black;
+    text-shadow: 5px 5px #284232;
     }
+h2{
+  color: #030403;
+  text-align: left;
+  padding: 2rem 2rem 0 2rem;
+}
 
 p {
-    color: black;
-    }
-/* layout */
+    color: #E0E5E4;
+align-items: center;
+text-align: center;
+padding: 2rem 2rem 2rem 1rem;
+  }
+
+p.border {
+  display: flex;
+  border: 2px solid #E0E5E4;
+  padding: 3rem;
+  max-height: 90%;
+}
+
+figcaption {
+  color: #E0E5E4;
+  margin-top: 2rem;
+}
+
+figcaption:hover {
+  color: #07EA10;
+}
+
+a {
+  color: #618774;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #07EA10;
+}
+
+a:active {
+  color: #446550;
+}
+
 #first-div {
-    background-image: url(background.jpg);
+    background-image: url(assets/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -33,9 +69,22 @@ p {
   }
 
 #second-div {
-    background-color: black;
+    background-color: #0D0E0D;
     min-height: 100vh;
   }
+
+#third-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+text-align: center;
+background-image: url(assets/pexels-ilja-2099586.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
 
 #image {
     display: block;
@@ -45,24 +94,42 @@ p {
     height: auto;
   }
 
- #important {
-    color: white;
-    margin: auto;
+  #important {
+    color: #E0E5E4;
     position: absolute;
     top: 150%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: max(8.7vw; 30px);
-    border: 2px solid white;
-    padding: inherit;
+    font-size: 300%;
   }
 
- #tribute-info {
-    background-color: rgb(67, 98, 67);
-  }
+#text-div {
+  background-color: #618774;
+  opacity: 0.8;
+  margin: 5rem;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+#img-div {
+ padding: 5rem; 
+  min-width: 200px;
+  max-width: 300px;
+}
+
+ /* #tribute-info {
+    background-color: #618774;
+  } */
 
 footer {
-    background-color: rgb(86, 244, 86);
+    background-color: #0D0E0D;
     color: black;
     text-align: left;
+    font-size: 15px;
+    padding: 10px;
+  
+      }
+
+  #github_logo {
+    max-width: 20px;
   }

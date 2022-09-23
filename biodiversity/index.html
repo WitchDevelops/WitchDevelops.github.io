@@ -1,33 +1,55 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" /> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Tribute page to...?</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <title>Biodiversity loss</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <!--set custom browser icon-->
+    <link rel="icon" href="/assets/microbes.svg"/>
+    <!--display this in link preview-->
+    <meta name="description" content="Earth biodervisity mainly depends on the state of the forests. Tropical forests contain about 90% of the world's species. We are currently experiencing the sixth mass extinction: The Holocene extinction."/>
+    <!--Import fonts-->
+    <link href='https://fonts.googleapis.com/css?family=PT Serif Caption' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 
 <body>
     <main id="main">
+        <!--First part of the page-->
         <div id="first-div">
             <h1 id="title">Biodiversity</h1>
         </div>
+        <!--second part of the page-->
         <div id="second-div">
-            <p id="important">We lost more species than we know of</p>
+            <p class="border" id="important">We lost more species than we know of</p>
         </div>
+        <!--Third part of the page-->
        <div id="third-div">
-            <figure id="img-div">
-                <img id="image" src="https://pbs.twimg.com/media/EvAIVYbU4AATinY?format=jpg&name=900x900" alt="David Attenborough quote. David en face with a thoughtful look on his face. The qoute says: Forests are a fundamental component of our planet's recovery. They are the best technology nature has for locking away carbon. And they are centres of biodiversity. The wilder and more diverse forests are, the more effective they are at drawing carbon from the atmosphere. We must immediately halt deforestation everywhere.">
-                <figcaption id="img-caption">David Attenborough says a thing</figcaption>
-            </figure>
+            <!--box with text-->  
+            <div id="text-div">
+                <h2>Biodiversity</h2>
+                <p>is not equally distributed among the word. Terrestial biodiversity is approximately 25 times higher than ocean biodiversity. Life is especially rich in the rainforests, which harbor about 90% of the world’s species. As biodiversity is closely knit with the living conditions on Earth, it is therefore imperative to protect the rainforests at all cost.</p>
+            </div>
+            <!--box with the logo-->
+            <div>
+                <figure id="img-div">
+                    <a href="https://www.rainforest-alliance.org/" id="tribute-link" target="_blank" rel="noopener">
+                    <img id="image" src="/assets/rainforest_alliance.svg" alt="logo of the Rainforest Alliance">
+                    <figcaption id="img-caption">Visit Rainforest Alliance  website and learn more about what can you do for the planet</figcaption></a>
+                </figure>
+            </div>
         </div>
-
+<!--
         <div id="tribute-info">
-            <p>Rainforest alliance</p>
-            <a href="" id="tribute-link" target="_blank">learn more</a>
+            <p>Visit Rainforest Alliance <a href="https://www.rainforest-alliance.org/" id="tribute-link" target="_blank"> website </a> and learn more about what can you do for the planet</p>
         </div>
+        -->
     </main>
     <footer>
-        <p>Created by </p>
+        <p>Made by <a rel="noopener" href="https://github.com/WitchDevelops" target="_blank">WitchDevelops <img id="github_logo" src="/assets/github.svg" alt="GitHub logo that is a link to my GitHub account"/></a> Dominika Wojewska </p>
+        
     </footer>
 </body>
+</html>
