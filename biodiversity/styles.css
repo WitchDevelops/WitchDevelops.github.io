@@ -66,6 +66,7 @@ a:active {
     background-attachment: fixed;
     background-position: center;
     min-height: 100vh;
+    box-shadow: inset 0px 0px 1200px black;
   }
 
 #second-div {
@@ -84,6 +85,7 @@ background-image: url(assets/pexels-ilja-2099586.jpg);
     background-attachment: fixed;
     background-position: center;
     min-height: 100vh;
+    box-shadow: inset 0px 0px 1200px black;
 }
 
 #image {
