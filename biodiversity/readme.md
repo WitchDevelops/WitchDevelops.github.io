@@ -3,6 +3,8 @@ This project was developed during the FreeCodeCamp web development bootcamp, bas
 First, I designed how the page would look like in Figma:
 (https://www.figma.com/file/gaoT8fgstl15v9pUIuzwQn/Biodiversity?node-id=0%3A1)
 
+https://raw.githubusercontent.com/WitchDevelops/WitchDevelops.github.io/main/biodiversity/Biodiversity_Figma.png
+
 Then I coded it in VS Code and deployed to GitHub pages.
 
 This project features:
