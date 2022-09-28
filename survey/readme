@@ -1,0 +1,12 @@
+(https://witchdevelops.github.io/survey/)
+
+This project was designed and developed during the FreeCodeCamp web development bootcamp, designed and developed by me, based on the required features.
+
+(still needs some work)
+
+Features:
+- responsive design,
+- form validation,
+- hover and active states for the "Submit" button,
+- "Submit" button in the language you're using in your browser,
+- visual effects like dropshadow and consistent color palette.
