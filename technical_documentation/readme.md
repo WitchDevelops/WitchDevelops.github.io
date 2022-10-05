@@ -1,4 +1,5 @@
 Technical documentation page created from scratch (content, layout, color scheme, coding) in HTML, CSS and JavaScript.
+https://witchdevelops.github.io/technical_documentation/
 
 Features:
 - hamburger menu that stays always on top (created with CSS)
@@ -11,3 +12,6 @@ Features:
 I tried using Bootstrap and jQuery for the menu, but it didn't look right (menu items weren't visible). 
 The CSS code for the animated menu was mainly copied from CodePen https://codepen.io/erikterwan/pen/EVzeRP.
 The JavaScript code was adapted from https://www.w3schools.com/cssref/css_pxtoemconversion.asp.
+
+![closed](https://user-images.githubusercontent.com/112077394/194157632-f39791c0-7643-478f-bdf1-48f5e34404ae.png)
+![open](https://user-images.githubusercontent.com/112077394/194157605-06a28a99-abaa-4b70-9ba3-630292fe89e2.png)
