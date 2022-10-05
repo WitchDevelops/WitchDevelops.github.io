@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--icon from freepik https://www.flaticon.com/free-icons/internet-->
+    <!--icon from freepik https://www.flaticon.com/free-icons/internet-->
     <link rel="icon" href="/technical_documentation/icon.png"/>
     <meta name="description" content="How to build a responsive website? Read this technical documentation page."/>
     <title>Responsive Web Design - Technical Documentation</title>
@@ -14,24 +14,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!--import the script for the unit converter-->
     <script src="converter.js"></script>
 </head>
 
 <body>
-    <nav id="navbar">
-      <header>
-        Jump to: 
-      </header>
-      <button><a class="nav-link" href="#responsive_web_design_definition">Definition</a></button>
-      <button><a class="nav-link" href="#setting_the_viewport">Viewport set</a></button>
-      <button><a class="nav-link" href="#relative_length_units">Relative length units</a></button>
-      <button><a class="nav-link" href="#responsive_images">Responsive images</a></button>
-      <button><a class="nav-link" href="#responsive_text_size">Responsive text size</a></button>
-      <button><a class="nav-link" href="#media_queries">Media queries</a></button>
-      <button><a class="nav-link" href="#PX_to_em_converter">Converter: px to em</a></button>
-      <button><a class="nav-link" href="#learn_responsive_web_design">Learn responsive Web Design</a></button>
-    </nav>
-
+  <!--navigation bar-->
+  <nav role="navigation" id="navbar">
+    <div id="menuToggle">
+      <!--A fake / hidden checkbox is used as click receiver, so you can use the :checked selector on it. -->
+      <input type="checkbox" />
+      <!--spans to create the burger icon-->
+      <span></span>
+      <span></span>
+      <span></span>
+      <!--menu items-->
+      <ul id="menu">
+        <a class="nav-link" href="#responsive_web_design_definition"><li>Definition</a></li>
+        <a class="nav-link" href="#setting_the_viewport"><li>Viewport set</a></li>
+        <a class="nav-link" href="#relative_length_units"><li>Relative length units</a></li>
+        <a class="nav-link" href="#responsive_images"><li>Responsive images</a></li>
+        <a class="nav-link" href="#responsive_text_size"><li>Responsive text size</a></li>
+        <a class="nav-link" href="#media_queries"><li>Media queries</a></li>
+        <a class="nav-link" href="#PX_to_em_converter"><li>Converter: px to em</a></li>
+        <a class="nav-link" href="#learn_responsive_web_design"><li>Learn responsive Web Design</a>
+      </ul>
+    </div>
+  </nav> 
+  <!--end of navigation bar-->
     <main id="main-doc">
 
       <section class="main-section" id="responsive_web_design_definition">
@@ -339,7 +349,7 @@
           <li>4-hour crash course on <a href="https://www.youtube.com/watch?v=srvUrASNj0s" target="_blank" rel="no-referer">YouTube</a></li>
           <li>3 modern CSS techniques for responsive design <a href="https://www.youtube.com/watch?v=VsNAuGkCpQU" target="_blank" rel="no-referer">YouTube 15 min video</a></li>
       </section>
-    <footer class="full-width">
+    <footer>
         <p><span>Written, designed and coded by </span><a rel="noopener" href="https://github.com/WitchDevelops" target="_blank">WitchDevelops <img src="github.png"> Dominika Wojewska</a></p>
     </footer>
     </main>
