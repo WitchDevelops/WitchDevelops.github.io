@@ -1,0 +1,282 @@
+:root {
+    --light: #F5F5F5;
+    --beige: #757674;
+    --dark: #2F3132;
+    --blue: #5E8EB7;
+    --blackish: #141414;
+    --contrast: #cfa049;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Open Sans', Arial, sans-serif;
+    max-width: 100%;
+}
+  
+::selection {
+    background-color: var(--contrast);
+}
+  
+body {
+    background-color: var(--light);
+    color: var(--blackish);
+  }
+
+/* nav bar styling */
+nav {
+    display: block;
+    position: relative;
+  }
+  
+nav header {
+    display: block;
+    background-color: var(--dark);
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+button {
+    display: block;
+    border-bottom: 2px solid var(--beige);
+    margin: auto;
+    width: 300px;
+    height: 4.3rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: var(--beige);
+}
+
+button:active {
+    background-color: var(--blue);
+}
+
+/* links styling */
+a {
+    text-decoration: none;
+    color: var(--blackish);
+}
+
+main section a {
+    font-style: italic;
+}
+
+main section a:hover {
+    color: var(--blue);
+}
+  
+main section a:active {
+    color: var(--contrast);
+}
+
+footer a {
+    color: var(--blue);
+}
+
+footer a:hover {
+    color: var(--beige);
+}
+  
+footer a:active {
+    color: var(--contrast);
+}
+
+/* main content styling */
+.main-section header {
+    font-size: 2rem;
+    color: var(--light);
+    background-color: var(--dark);
+    width: 100vw;
+    font-weight: bold;
+    padding: 1.3rem;
+}
+  
+.main-section p {
+   padding: 1rem 1.5rem;
+   background-color: var(--light);
+   color: var(--blackish);
+}
+
+.main-section p + p {
+    padding: 0rem 1.5rem;
+}
+
+.main-section p + p:last-of-type {
+    padding: 1rem 1.5rem;
+}
+
+.main-section ul {
+    list-style: inside;
+    background-color: var(--light);
+    padding: 1.3rem;
+    margin-left: 1.5em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    min-width: 300px;
+    margin: auto;
+}
+
+hr {
+    border: 1px solid var(--blue);
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+}
+
+
+.important {
+    text-align: center;
+}
+
+.full-width {
+    
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    width: 100%;
+}
+
+.indent {
+    margin-left: 4rem;
+}
+
+/* displayed code styling */
+code, 
+.full-width {
+    font-family: "Courier New";
+    background-color: var(--blackish);
+    color: var(--light);
+}
+
+code {
+    padding: 3px;
+}
+  
+/* table styling */
+table, 
+th,
+td {
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--light);
+}
+  
+th {
+    background-color: var(--blue);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.7rem;
+}
+
+td {
+    color: var(--dark);
+    border-bottom: 1px solid var(--beige);
+}
+
+/* converter div styling */
+.converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: auto;
+    border: 1px solid var(--beige);
+}
+
+.converter p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.input-text {
+    font-size:  1.3rem;
+    text-align: center;
+    width: 8rem;
+}
+
+#result1 {
+    font-size:  1.3rem;
+}
+
+/* converter button */
+.action_convert {
+    border: 2px solid var(--blue);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 12rem;
+}
+
+.action_convert:hover {
+    background-color: var(--blue);
+}
+
+.action_convert:active {
+    background-color: var(--contrast);
+    border-color: var(--contrast);
+}
+
+#result1 {
+    font-size:  1.3rem;
+}
+
+/************************************************/
+/* resposiveness - navigation bar styling: desktop */ 
+@media screen and (min-width: 768px) {
+    #navbar {
+        position: fixed;
+        min-width: 250px;
+        max-width: 300px;
+        width: 300px;
+        height: 100%;
+        border-right: solid;
+        border-color: var(--beige);
+    }
+}
+    
+/* resposiveness - navigation bar styling: mobile */
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    #navbar {
+        width: 100vw;
+    }
+      .nav-link {
+        width: 100vw;
+    }
+}
+
+/* resposiveness - main content display: mobile */
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    main {
+      display: block;
+      }
+}
+
+/* resposiveness - main content display: desktop */
+@media screen and (min-width: 640px) {
+  main {
+    display: block;
+    position: absolute;
+    margin-left: 300px;
+    width: calc(100% - 300px);
+    }
+}
