@@ -13,7 +13,7 @@
     border: 0;
     box-sizing: border-box;
     line-height: 1.5;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     max-width: 100%;
 }
   
@@ -142,15 +142,26 @@ hr {
 
 footer {
     text-align: center;
+    color: var(--blue);
+    background-color: var(--blackish);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
 }
 
+footer span {
+    color: var(--light);
+}
+
+footer img {
+    display: inline-block;
+    min-width: 1rem;
+}
 
 .important {
     text-align: center;
 }
 
 .full-width {
-    
     padding-top: 1.3rem;
     padding-bottom: 1.3rem;
     width: 100%;
@@ -163,9 +174,9 @@ footer {
 /* displayed code styling */
 code, 
 .full-width {
-    font-family: "Courier New";
-    background-color: var(--blackish);
-    color: var(--light);
+    font-family: 'Roboto Mono', monospace;
+    background-color: #eff0ef;
+    color: var(--blackish);
 }
 
 code {
