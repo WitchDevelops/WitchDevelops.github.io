@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--icon from freepik https://www.flaticon.com/free-icons/internet-->
+    <link rel="icon" href="/biodiversity/assets/microbes.png"/>
+    <meta name="description" content="How to build a responsive website? Read this technical documentation page."/>
+    <title>Responsive Web Design - Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="converter.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+      <header>
+        Jump to: 
+      </header>
+      <button><a class="nav-link" href="#responsive_web_design_definition">Definition</a></button>
+      <button><a class="nav-link" href="#setting_the_viewport">Viewport set</a></button>
+      <button><a class="nav-link" href="#relative_length_units">Relative length units</a></button>
+      <button><a class="nav-link" href="#responsive_images">Responsive images</a></button>
+      <button><a class="nav-link" href="#responsive_text_size">Responsive text size</a></button>
+      <button><a class="nav-link" href="#media_queries">Media queries</a></button>
+      <button><a class="nav-link" href="#PX_to_em_converter">Converter: px to em</a></button>
+      <button><a class="nav-link" href="#learn_responsive_web_design">Learn responsive Web Design</a></button>
+    </nav>
+
+    <main id="main-doc">
+
+      <section class="main-section" id="responsive_web_design_definition">
+        <header>Responsive web design definition</header>
+        <p>Responsive web design is an approach to web design that aims to make web pages render well on a variety of devices and window or screen sizes, to ensure usability and satisfaction.</p>
+        <p>A responsive design adapts the web-page layout to the viewing environment by using techniques such as fluid proportion-based grids, flexible images, and CSS3 media queries, in the following ways:</p>
+        <ul>
+            <li><strong>fluid grid concept</strong>: page element sizing in relative units,</li>
+            <li><strong>flexible images</strong>: sized in relative units,</li>
+            <li><strong>flexible text</strong>: sized in relative units,</li>
+            <li><strong>media queries</strong>: using different CSS style rules, depending on the screen size of the device the page is being displayed on,</li>
+            <li><strong>responsive layouts</strong>: automatically adjust and adapt to any device screen size.</li>
+        </ul>
+  <p>Responsive web design became more important as users of mobile devices came to account for the majority of web site visitors. In 2015, for instance, Google announced Mobilegeddon and started to boost the page ranking of mobile-friendly sites when searching from a mobile device.</p>
+    <p>Responsive web design is an example of user interface plasticity.</p>
+    <hr>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Content-is-like-water.svg/1280px-Content-is-like-water.svg.png" alt="Contents is like water. Image shows a cup, a teapot, a bottle, a mobile device, and a desktop, all filled with a fluid content. Quote below says: You put water into a cup, it becomes the cup. You put water into a bottle, it becomes the bottle. You put it in a teapot, it becomes the teapot. Josh Clark (originally Bruce Lee) - Seven deadly mobile myths. Illustration by Stephanie Walter."/>
+    <hr>
+    <p>Source: <a href="https://en.wikipedia.org/wiki/Responsive_web_design">Wikipedia.</a></p>
+      </section>
+
+      <section class="main-section" id="setting_the_viewport">
+        <header>Setting the viewport</header>
+        <p>To create a responsive website, the following meta tag has to be added to the <code>head</code> section in the HTML:</p>
+        <div class="full-width">
+          <code class="indent">meta name="viewport" content="width=device-width, initial-scale=1.0"</code>
+        </div>
+        <p>This will set the viewport of the page, which will give the browser instructions on how to control the page's dimensions and scaling.</p>
+      </section>
+
+      <section class="main-section" id="relative_length_units">
+        <header>Relative length units</header>
+        <p>Relative length units are relative to something else, perhaps the size of the parent element's font, or the size of the viewport. The benefit of using relative units is that with some careful planning you can make it so the size of text or other elements scales relative to everything else on the page. Some of the most useful units for web development are listed in the table below.</p>
+        
+        <table>
+          <tr>
+            <th>Unit</th>
+            <th>Relative to</th>
+          </tr>
+
+          <tr>
+            <td><code>em</code></td>
+            <td><span>Font size of the parent (for typographical elements like <code>font-size</code>).</span></br>
+                <span>Font size of the element itself (for other properties, like <code>width</code>).</span></td>
+          </tr>
+
+          <tr>
+            <td><code>ex</code></td>
+            <td>x-height of the element's font.</td>
+          </tr>
+
+          <tr>
+            <td><code>ch</code></td>
+            <td>The advance measure (width) of the glyph "0" of the element's font.</td>
+          </tr>
+
+          <tr>
+            <td><code>rem</code></td>
+            <td>Font size of the <b>root</b> element.</td>
+          </tr>
+
+          <tr>
+            <td><code>lh</code></td>
+            <td>Line height of the element.</td>
+          </tr>
+
+          <tr>
+            <td><code>rlh</code></td>
+            <td><span>Line height of the root element.</span></br>
+                <span>When used on the <code>font-size</code> or <code>line-height</code> properties of the root element, it refers to the properties' initial value.</span></td>
+          </tr>
+
+          <tr>
+            <td id="vw"><code>vw</code></td>
+            <td>1% of the viewport's <b>width</b>.</td>
+          </tr>
+
+          <tr>
+            <td><code>vh</code></td>
+            <td>1% of the viewport's <b>height</b>.</td>
+          </tr>
+
+          <tr>
+            <td><code>vmin</code></td>
+            <td>1% of the viewport's smaller dimension.</td>
+          </tr>
+
+          <tr>
+            <td><code>vmax</code></td>
+            <td>1% of the viewport's larger dimension.</td>
+          </tr>
+
+          <tr>
+            <td><code>vb</code></td>
+            <td>1% of the size of the initial containing block in the direction of the root element's block axis.</td>
+          </tr>
+
+          <tr>
+            <td><code>vi</code></td>
+            <td>1% of the size of the initial containing block in the direction of the root element's inline axis.</td>
+          </tr>
+
+          <tr>
+            <td><code>svw</code></td>
+            <td>1% of the small viewport's <b>width</b></td>
+          </tr>
+
+          <tr>
+            <td><code>svh</code></td>
+            <td>1% of the small viewport's <b>height</b></td>
+          </tr>
+
+          <tr>
+            <td><code>lvw</code></td>
+            <td>1% of the large viewport's <b>width</b></td>
+          </tr>
+
+          <tr>
+            <td><code>lvh</code></td>
+            <td>1% of the large viewport's <b>height</b></td>
+          </tr>
+
+          <tr>
+            <td><code>dvw</code></td>
+            <td>1% of the dynamic viewport's <b>width</b></td>
+          </tr>
+
+          <tr>
+            <td><code>dvh</code></td>
+            <td>1% of the dynamic viewport's <b>height</b></td>
+          </tr>
+
+          <tr>
+            <td><code>%</code></td>
+            <td id="%">1% of the parent elements' <b>length</b></td>
+          </tr>
+
+        </table>
+
+        <p>Source: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS">MDN web docs</a></p>
+      </section>
+
+      <section class="main-section" id="responsive_images">
+        <header>Responsive images</header>
+        <p>Responsive images will automatically adjust to fit the size of the screen.</p>
+        <p>Best practice is to adda class in HTML and call it, e.g., <code>responsive</code>. See the example below:</p>
+        <div class="full-width"><code class="indent">img src="nature.jpg" alt="Nature" class="responsive"</code></div>
+        <p>In CSS, target the <code>.responsive</code>class, and give it width and height properties, according to how you want the responsive behavior to act.</p>
+        <p>For scaling both up and down, set the width to <code>100%</code>(or the desired width value, remembering that the <a href="#%" target="_self"><code>%</code></a>relates to the parent element):</p>
+        <div class="full-width">
+            <code class="indent">.responsive {</code></br>
+            <code class="indent">width: 100%;</code></br>
+            <code class="indent">height: auto;</code></br>
+            <code class="indent">}</code>
+        </div>
+        <p>For scaling down, but never scaling up to be larger than its original size, use <code>max-width: 100%:</code></p>
+        <div class="full-width">
+            <code class="indent">.responsive {</code></br>
+            <code class="indent">max-width: 100%;</code></br>
+            <code class="indent">height: auto;</code></br>
+            <code class="indent">}</code>
+        </div>
+        <p>To restrict a responsive image to a maximum size, use the <code>max-width</code>property, with a pixel value of your choice:</p>
+        <div class="full-width">
+            <code class="indent">.responsive {</code></br>
+            <code class="indent">width: 100%;</code></br>
+            <code class="indent">max-width: 400px;</code></br>
+            <code class="indent">height: auto;</code></br>
+            <code class="indent">}</code>
+        </div>
+        <p>Source: <a href="https://www.w3schools.com/howto/howto_css_image_responsive.asp" target="_blank" rel="no-referer">w3schools</a></p>
+      </section>
+
+      <section class="main-section" id="responsive_text_size">
+        <header>Responsive text size</header>
+        <p>The text size can be set with a <a href="#vw" target="_self"><code>vw</code></a> unit, which means the "viewport width". That way the text size will follow the size of the browser window.</p>
+        <p>It can also be nested within a <a href="#media_queries">media query</a>, to more specifically target the size of the screen.</p>
+      </section>
+      
+      <section class="main-section" id="media_queries">
+        <header>Media queries</header>
+        <p>A Media query is a CSS3 feature that makes a webpage adapt its layout to different screen sizes and media types.</p>
+        <p><strong>Syntax of a media query:</strong></p>
+        <div class="full-width">
+            <code class="indent">@media media type and (condition: breakpoint) {</code></br>
+            <code class="indent">// CSS rules</code></br>
+            <code class="indent">}</code>
+        </div>
+        <p>We can target different media types under a variety of conditions. If the condition and/or media types meet, then the rules inside the media query will be applied, otherwise, they won’t.</p>
+        <hr>
+        <div class="important"><strong>Important: Always put your media queries at the end of your CSS file.</strong></div>
+        <hr>
+        <p>There are many kinds of devices but we can group them into 4 categories:
+        <ul>
+            <li>all — for all media types</li>
+            <li>print — for printers</li>
+            <li>screen — for computer screens, tablets and, smart-phones</li>
+            <li>speech — for screen readers that “read” the page out loud</p></li>
+        </ul>
+        <p>With a huge number of device targets and screen sizes, rather than optimizing the UI for each device, it is recommended designing for a few key width categories (also called “breakpoints“):</p>
+        <table>
+            <tr>
+                <th>Screen size</th>
+                <th>Breakpoints</th>
+            </tr>
+            <tr>
+                <td>Small</td>
+                <td>smaller than 640px</td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td>641px to 1007px</td>
+            </tr>
+            <tr>
+                <td>Large</td>
+                <td>1008px and larger</td>
+            </tr>
+        </table>
+        <p>Despite this information, <strong>there is no standard screen size for web design</strong>.</p>
+        <p>Depending on the nature of the website, users might use certain devices that do not offer the screen sizes and resolutions mentioned above. To identify the right screen sizes for web design, invest in analytics. Find out what your target audience is most likely to use. If those devices don’t adhere to the aforementioned resolution, then include them in the mix.</p>
+        <p>Source: <a href="https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design" target="_blank" rel="no-referer">Microsoft’s documentation</a></p>
+        <p>To be even more specific, some common widths of devices are as follows:</p>
+        <table>
+            <tr>
+                <th>Device type</th>
+                <th>Breakpoints</th>
+            </tr>
+            <tr>
+                <td>Mobile devices</td>
+                <td>320px - 480px</td>
+            </tr>
+            <tr>
+                <td>Tablets</td>
+                <td>481px - 768px</td>
+            </tr>
+            <tr>
+                <td>Laptops</td>
+                <td>769px - 1024px</td>
+            </tr>
+            <tr>
+                <td>Desktops</td>
+                <td>1025px - 1200px</td>
+            </tr>
+            <tr>
+                <td>TV and ultrawide screens</td>
+                <td>1201px and more</td>
+            </tr>
+        </table>
+        <p>Source: <a href="https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/" target="_blank" rel="no-referer">FreeCodeCamp</a></p>
+      </section>
+
+      <section class="main-section" id="PX_to_em_converter">
+        <header>px to em converter</header>
+        <p>W3schools provides a converter from px units to em units. It can be found <a href="https://www.w3schools.com/cssref/css_pxtoemconversion.asp" target="_blank" rel="no-referer">here.</a></p>
+
+        <!--Copied code, but reworked: removed unnecessary classes and inline styles, changed function name as I think naming anything myFunction is uninformative-->
+        <div class="converter">
+            <p>Set default font size:</p>
+            <p><input 
+            class="input-text" 
+            type="text" 
+            id="pix1" 
+            value="16"> 
+             px</p>
+            
+            <p>Convert PX to EM:</p>
+            <p><input 
+              onfocus="wrongPx()" 
+              onblur="worksPx()" 
+              class="input-text" 
+              type="text" 
+              id="inputPx" 
+              value=""> 
+             px</p>
+
+            <p>Convert EM to PX:</p>
+            <p><input 
+              onfocus="wrongEm()" 
+              onblur="worksEm()" 
+              class="input-text"  
+              type="text" 
+              id="inputEm" 
+              value=""> 
+             em</p>
+
+            <button 
+            class="action_convert" 
+            onclick="convertUnits()">
+            Convert</button>
+
+            <p>Result: <span id="result1">0 px</span></p>
+            </div>
+            <p>Source: <a href="https://www.w3schools.com/cssref/css_pxtoemconversion.asp" target="_blank" rel="no-referer">W3schools</a></p>
+        <!--end-->
+
+      </section>
+
+      <section class="main-section" id="learn_responsive_web_design">
+        <header>Learn responsive Web Design</header>
+        <p>Learn responsive Web Design from the king of CSS, Kevin Powell. Links to learning resources:</p>
+        <ul>
+          <li>Bootcamp provided by <a href="https://scrimba.com/learn/responsive" target="_blank" rel="no-referer">Scrimba</a></li>
+          <li>4-hour crash course on <a href="https://www.youtube.com/watch?v=srvUrASNj0s" target="_blank" rel="no-referer">YouTube</a></li>
+          <li>3 modern CSS techniques for responsive design <a href="https://www.youtube.com/watch?v=VsNAuGkCpQU" target="_blank" rel="no-referer">YouTube 15 min video</a></li>
+      </section>
+    <footer class="full-width">
+        <p>Designed and coded by <a rel="noopener" href="https://github.com/WitchDevelops" target="_blank"> Dominika Wojewska</p>
+    </footer>
+    </main>
+</body>
+</html>
