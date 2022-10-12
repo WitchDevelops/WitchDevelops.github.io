@@ -132,3 +132,15 @@ footer {
 #github_logo {
   max-width: 20px;
 }
+
+@media screen and (max-width: 320px) {
+  p.border {
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p.border {
+    font-size: 270%;
+  }
+}
