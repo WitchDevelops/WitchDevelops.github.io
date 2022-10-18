@@ -1,7 +1,10 @@
-Technical documentation page created from scratch (content, layout, color scheme, coding) in HTML, CSS and JavaScript.
-https://witchdevelops.github.io/technical_documentation/
+# About
+It's a technical documentation page about responsive web design. I created it from scratch (content, layout, color scheme, coding) in HTML, CSS and JavaScript.
 
-Features:
+# Link
+[See the project here](https://witchdevelops.github.io/technical_documentation/)
+
+# Features
 - hamburger menu that stays always on top (created with CSS)
 - animation for the menu (CSS)
 - inner links to page sections
@@ -9,9 +12,16 @@ Features:
 - media queries with the menu on the left for desktop and hidden for mobile and tablet
 - unit converter (JavaScript).
 
+# Comments
 I tried using Bootstrap and jQuery for the menu, but it didn't look right (menu items weren't visible). 
 The CSS code for the animated menu was mainly copied from CodePen https://codepen.io/erikterwan/pen/EVzeRP.
 The JavaScript code was adapted from https://www.w3schools.com/cssref/css_pxtoemconversion.asp.
 
 ![closed](https://user-images.githubusercontent.com/112077394/194157632-f39791c0-7643-478f-bdf1-48f5e34404ae.png)
 ![open](https://user-images.githubusercontent.com/112077394/194157605-06a28a99-abaa-4b70-9ba3-630292fe89e2.png)
+
+# TO DO
+- move the menu to the right
+- remove the left margin on desktop
+- add a sticky bar as background for the hamburger menu
+- keep the menu open as default on desktop
