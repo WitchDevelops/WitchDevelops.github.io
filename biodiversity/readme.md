@@ -14,7 +14,8 @@ This project features:
 - custom icon for a browser tag.
 
 # Design
-[See the design on Figma](https://www.figma.com/file/gaoT8fgstl15v9pUIuzwQn/Biodiversity?node-id=0%3A1)
+[See the design file on Figma]
+(https://www.figma.com/file/gaoT8fgstl15v9pUIuzwQn/Biodiversity?node-id=0%3A1)
 ![Screenshot](Biodiversity_Figma.png)
 
 # TO DO
