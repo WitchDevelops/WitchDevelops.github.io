@@ -19,8 +19,7 @@ b) below the fold elements:
 # Design
 I started my design with mobile first. Once it is coded, I will adjust it for bigger screens.
 
-[view on Canva:] (https://shorturl.at/ovA46 "link to Canva")
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[view on Canva:](https://shorturl.at/ovA46 "link to Canva")
 
 ![1](https://user-images.githubusercontent.com/112077394/196398413-db595b05-e4be-4724-8c5e-eea2ded8263d.png)
 ![2](https://user-images.githubusercontent.com/112077394/196398428-22906fd5-2edb-47f7-a3fb-3b3cbb213c4c.png)
