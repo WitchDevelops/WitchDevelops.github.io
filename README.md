@@ -18,7 +18,7 @@
 
 * improve the home page substitute project
 
-* imnprove the technical documentation project
+* improve the technical documentation project
 
 * create a portfolio site with a project gallery.
 
