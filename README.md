@@ -13,6 +13,14 @@ technical documentation app: [WitchDevelops.github.io/technical_documentation] (
 
 ## future plans:
 
+improve the web form project
+
+improve the home page substitute project
+
+imnprove the technical documentation project
+
 create a portfolio site with a project gallery.
 
+learn React
 
+learn Bootstrap
