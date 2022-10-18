@@ -1,26 +1,27 @@
 # WitchDevelops.github.io
 
-## contents:
+## Contents:
 
-web form: [WitchDevelops.github.io/survey] (https://witchdevelops.github.io/survey/)
+* web form: [WitchDevelops.github.io/survey] (https://witchdevelops.github.io/survey/)
 
-'tribute' page: [WitchDevelops.github.io/biodiversity] (https://witchdevelops.github.io/biodiversity/)
+* 'tribute' page: [WitchDevelops.github.io/biodiversity] (https://witchdevelops.github.io/biodiversity/)
 
-substitute of a home page, while it is under construction: [WitchDevelops.github.io/dentus] (https://witchdevelops.github.io/dentus/)
+* substitute of a home page, while it is under construction: [WitchDevelops.github.io/dentus] (https://witchdevelops.github.io/dentus/)
 
-technical documentation app: [WitchDevelops.github.io/technical_documentation] (https://witchdevelops.github.io/technical_documentation/)
+* technical documentation app: [WitchDevelops.github.io/technical_documentation] (https://witchdevelops.github.io/technical_documentation/)
 
+* landing page /in development/
 
-## future plans:
+## Future plans:
 
-improve the web form project
+* improve the web form project
 
-improve the home page substitute project
+* improve the home page substitute project
 
-imnprove the technical documentation project
+* imnprove the technical documentation project
 
-create a portfolio site with a project gallery.
+* create a portfolio site with a project gallery.
 
-learn React
+* learn React
 
-learn Bootstrap
+* learn Bootstrap
