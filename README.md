@@ -10,7 +10,7 @@
 
 * technical documentation app: [WitchDevelops.github.io/technical_documentation] (https://witchdevelops.github.io/technical_documentation/)
 
-* landing page /in development/
+* landing page /in development/ [https://github.com/WitchDevelops/WitchDevelops.github.io/tree/main/donday]
 
 ## Future plans:
 
