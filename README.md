@@ -26,7 +26,7 @@
 
 * learn Bootstrap
 
-* create a portfolio site with project gallery (for now it is a quick build using CMS, but I plan to hard code it, using all the technologies I learned)
+* create a portfolio site with project gallery (for now it is a quick build using CMS, but I plan to hard code it, using all the technologies I learned) [Portfolio] (https://mokosh.dev)
 
 ## In progress:
 
