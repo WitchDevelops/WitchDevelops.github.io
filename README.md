@@ -20,8 +20,14 @@
 
 * improve the technical documentation project
 
-* create a portfolio site with a project gallery.
+* write a webpage with my CV and skills
 
 * learn React
 
 * learn Bootstrap
+
+* create a portfolio site with project gallery (for now it is a quick build using CMS, but I plan to hard code it, using all the technologies I learned)
+
+## In progress:
+
+* learn Angular - building a to-do app
