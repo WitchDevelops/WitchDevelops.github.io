@@ -1,5 +1,5 @@
 # About
-It's a technical documentation page about responsive web design. I created it from scratch (content, layout, color scheme, coding) in HTML, CSS and JavaScript.
+It's a technical documentation page about responsive web design. I created it from scratch (content, layout, color scheme, coding) in pure HTML, CSS and JavaScript. The main focus here wasn't the page content, so it is not perfect, but it can serve as a quick guide to responsive web design principles. The main goal of this project was to practice my frontend skills and learn how to implement JavaScript in HTML pages.
 
 # Link
 [See the project here](https://witchdevelops.github.io/technical_documentation/)
@@ -14,7 +14,7 @@ It's a technical documentation page about responsive web design. I created it fr
 
 # Comments
 I tried using Bootstrap and jQuery for the menu, but it didn't look right (menu items weren't visible). 
-The CSS code for the animated menu was mainly copied from CodePen https://codepen.io/erikterwan/pen/EVzeRP.
+The CSS code for the animated menu was adapted from https://codepen.io/erikterwan/pen/EVzeRP.
 The JavaScript code was adapted from https://www.w3schools.com/cssref/css_pxtoemconversion.asp.
 
 ![closed](https://user-images.githubusercontent.com/112077394/194157632-f39791c0-7643-478f-bdf1-48f5e34404ae.png)
