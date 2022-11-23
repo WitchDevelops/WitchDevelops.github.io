@@ -1,7 +1,7 @@
 # About
 It's a technical documentation page about responsive web design. I created it from scratch (content, layout, color scheme, coding) in pure HTML, CSS and JavaScript. The main focus here wasn't the page content, so it is not perfect, but it can serve as a quick guide to responsive web design principles. 
 
-The main goal of this project was to practice my frontend skills, learn how to implement JavaScript into HTML pages (getByID), and to practice CSS animations.
+The main goal of this project was to practice my frontend skills, learn how to implement JavaScript into HTML pages (getElementById), and to practice CSS animations.
 
 # Link
 [See the project here](https://witchdevelops.github.io/technical_documentation/)
