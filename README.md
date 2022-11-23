@@ -8,7 +8,7 @@
 
 * substitute of a home page, while it is under construction: [WitchDevelops.github.io/dentus] (https://witchdevelops.github.io/dentus/)
 
-* technical documentation app: [WitchDevelops.github.io/technical_documentation] (https://witchdevelops.github.io/technical_documentation/)
+* technical documentation page: [WitchDevelops.github.io/technical_documentation] (https://witchdevelops.github.io/technical_documentation/)
 
 * landing page /in development/ [https://github.com/WitchDevelops/WitchDevelops.github.io/tree/main/donday]
 
