@@ -1,6 +1,8 @@
 # About
 This project was developed during the FreeCodeCamp web development bootcamp, based on their prompts. The design and coding are my own. For this project I designed desktop version first, then adjusted it for mobile. This was fine thanks to simplicity of the layout.
 
+The main goal of this project was to practice HTML and CSS and learn how to use Figma.
+
 # Link
 [See the project here](https://witchdevelops.github.io/biodiversity/)
 
