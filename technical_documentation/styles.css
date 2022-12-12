@@ -16,7 +16,6 @@
     box-sizing: border-box;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
-    max-width: 100%;
 }
   
 ::selection {
@@ -69,7 +68,7 @@ nav {
   height: 32px;
   position: absolute;
   top: -7px;
-  left: -5px;
+  left: calculate (100vw-5px);
   cursor: pointer;
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
@@ -113,7 +112,7 @@ nav {
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/* Ohyeah and the last one should go the other direction */
+/* the last one should go the other direction */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
@@ -121,8 +120,8 @@ nav {
 /* Make this absolute positioned at the top left of the screen */
 #menu {
   position: fixed;
-  width: 300px;
-  margin: -100px 0 0 -50px;
+  height: 100vh;
+  margin: -59px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
   background: var(--light);
@@ -379,6 +378,7 @@ td {
 @media screen and (min-width: 320px) and (max-width: 768px) {
     #navbar {
         width: 100vw;
+        height: 100vh;
     }
       .nav-link {
         width: 100vw;
