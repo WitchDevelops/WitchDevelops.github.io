@@ -16,6 +16,7 @@
     box-sizing: border-box;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
   
 ::selection {
@@ -53,12 +54,12 @@ nav {
 
 #menuToggle a {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--light);
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
-  color: var(--blackish);
+  color: var(--dark);
   font-weight: bold;
 }
 
@@ -67,10 +68,8 @@ nav {
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
-  left: calculate (100vw-5px);
   cursor: pointer;
-  opacity: 0; /* hide this */
+  opacity: 0; /* hide checkbox */
   z-index: 2; /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
@@ -82,7 +81,6 @@ nav {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: var(--blue);
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -103,7 +101,6 @@ nav {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: var(--blue);
 }
 
 /* But let's hide the middle one.*/
@@ -124,8 +121,8 @@ nav {
   margin: -59px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: var(--light);
-  border: 1px solid var(--beige);
+  background: var(--blue);
+  color: var(--light);
   list-style-type: none;
   -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */
   transform-origin: 0% 0%;
@@ -335,8 +332,8 @@ td {
     background: linear-gradient(
         to bottom, 
         transparent 50%,
-        var(--blue) 50%
-    )
+        var(--contrast) 50%
+    );
 }
 
 /* converter button */
@@ -360,9 +357,10 @@ td {
     font-size:  1.3rem;
 }
 
-/************************************************/
-/* resposiveness - navigation bar styling: desktop */ 
-@media screen and (min-width: 768px) {
+/*******************************************************/
+/*** resposiveness - navigation bar styling: desktop ***/ 
+/*******************************************************/
+@media screen and (min-width: 1024px) {
     #navbar {
         position: fixed;
         min-width: 250px;
@@ -372,32 +370,74 @@ td {
         border-right: solid;
         border-color: var(--beige);
     }
+    #menu {
+        border: 1px solid var(--beige);
+    }
+
+    /* hide the x and burger while on desktop */
+    #menuToggle input {
+        display: none;
+      }
+
+    #navbar {
+        width: 300px;
+        border: solid 2px var(--blackish);
+        background-color: var(--blue);
+    }
+
+    #menuToggle input:checked ~ ul {
+        transform: translate(0%, 0);
+        width: 300px;
+        border: none;
+        background-color: var(--blue);
+      }
+
+      #menuToggle input:not(:checked) {
+        position: absolute;
+        z-index: 999;
+      }
 }
-    
-/* resposiveness - navigation bar styling: mobile */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+/*******************************************************/
+/**** resposiveness - main content display: desktop ****/
+/*******************************************************/
+@media screen and (min-width: 1024px) {
+    main {
+      display: block;
+      position: absolute;
+      margin-left: 300px;
+      width: calc(100% - 300px);
+      }
+  }
+
+/**************************************************************/
+/* resposiveness - navigation bar styling: mobile and tablet**/
+/*************************************************************/
+@media screen and (min-width: 280px) and (max-width: 1023px) {
     #navbar {
         width: 100vw;
         height: 100vh;
+    }
+
+    /* #menuToggle {
+        background-color: var(--light);
+    } */
+
+    #menuToggle span {
+        background: var(--contrast);
+    }
+    #menuToggle input:checked ~ span {
+        background: var(--light);
     }
       .nav-link {
         width: 100vw;
     }
 }
 
-/* resposiveness - main content display: mobile */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+/***********************************************************/
+/* resposiveness - main content display: mobile and tablet */
+/***********************************************************/
+@media screen and (min-width: 280px) and (max-width: 1023px) {
     main {
       display: block;
       }
-}
-
-/* resposiveness - main content display: desktop */
-@media screen and (min-width: 768px) {
-  main {
-    display: block;
-    position: absolute;
-    margin-left: 300px;
-    width: calc(100% - 300px);
-    }
 }
