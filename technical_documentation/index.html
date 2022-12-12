@@ -299,10 +299,11 @@
         <header>px to em converter</header>
         <p>W3schools provides a converter from px units to em units. It can be found <a href="https://www.w3schools.com/cssref/css_pxtoemconversion.asp" target="_blank" rel="no-referer noopener">here.</a></p>
 
-        <!--Copied code, but reworked: removed unnecessary classes and inline styles, changed function name as I think naming anything myFunction is uninformative-->
+        <!--unit converter-->
         <div class="converter">
             <p>Set default font size:</p>
-            <p><input 
+            <p>
+              <input 
             class="input-text" 
             type="text" 
             id="pix1" 
@@ -334,7 +335,7 @@
             onclick="convertUnits()">
             Convert</button>
 
-            <p>Result: <span id="result1">0 px</span></p>
+            <p id="result-label">Result: <span id="result1">0 px</span></p>
             </div>
             <p>Source: <a href="https://www.w3schools.com/cssref/css_pxtoemconversion.asp" target="_blank" rel="no-referer noopener">W3schools</a></p>
         <!--end-->

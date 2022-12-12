@@ -139,8 +139,7 @@ nav {
   font-size: 1.4rem;
 }
 
-/*
- * And let's slide it in from the left */
+/* And let's slide it in from the left */
 #menuToggle input:checked ~ ul {
   transform: none;
 }
@@ -331,25 +330,31 @@ td {
     width: 8rem;
 }
 
-#result1 {
-    font-size:  1.3rem;
+#result-label {
+    font-size:  1.5rem;
+    font-weight: 700;
+    background: linear-gradient(
+        to bottom, 
+        transparent 50%,
+        var(--blue) 50%
+    )
 }
 
 /* converter button */
 .action_convert {
-    border: 2px solid var(--blue);
+    background-color: var(--blue);
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 12rem;
 }
 
 .action_convert:hover {
-    background-color: var(--blue);
+    background-color: var(--contrast);
 }
 
 .action_convert:active {
-    background-color: var(--contrast);
-    border-color: var(--contrast);
+    background-color: var(--dark);
+    color: white;
 }
 
 #result1 {
