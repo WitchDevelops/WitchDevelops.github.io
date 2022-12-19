@@ -18,10 +18,6 @@
 
 * improve the home page substitute project
 
-* improve the technical documentation project
-
-* write a webpage with my CV and skills
-
 * learn React
 
 * learn Bootstrap
@@ -30,4 +26,14 @@
 
 ## In progress:
 
-* learn Angular - building a to-do app
+* learn Angular
+
+* design and code portfolio page
+
+## Done:
+
+* build a to-do app in Angular
+
+* improve the technical documentation project
+
+* write a webpage with my CV and skills
